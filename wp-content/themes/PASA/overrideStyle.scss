@@ -3,18 +3,19 @@
  * For PASA UCMerced
  */
 
- .red{
- 	color: red;
- }
+/** --reset-- **/
+.red{
+	color: red;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
 
- .slogon{
- 	font-size: 38px;
- }
- .i-m-news{
- 	list-style: disc;
- 	font-size: 18px;
- }
 
+/** --container for header menu-- **/
 #container{
 	padding: 30px 0;
 	max-width: 970px;
@@ -23,6 +24,7 @@
 	background: #fff;
 }
 
+/** --footer-- **/
 footer{
 	width: 100%;
 	background: #092F44;
@@ -40,4 +42,13 @@ footer{
 			margin: 16px auto;
 		}
 	}
+}
+
+/** --some style for pages-- **/
+.slogon{
+	font-size: 38px;
+}
+.i-m-news{
+	list-style: disc;
+	font-size: 18px;
 }

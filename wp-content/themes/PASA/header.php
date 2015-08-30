@@ -24,6 +24,7 @@ global $times_square_settings;
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/GalleryOverried.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/overrideStyle.css">
   </head>
@@ -64,19 +65,31 @@ global $times_square_settings;
         'walker'            => new wp_bootstrap_navwalker())
       );
   ?>
-    <div class="navbar<?php echo $navbar_class; ?>" role="navigation">
+    <div class="head" role="navigation">
+
+      <div class="logo-wrapper">
+        <div class="left logo"><a href="http://pasa.ucmerced.edu" style="color:#fff;">PASA</a></div>
+        <div class="right intro">
+          <p>
+            Parallel Architecture, System, and Algorithm lab<br>
+            University of Carlifornia, Merced
+          </p>
+        </div>
+      </div>
 
       <div class="container">
 <!--         <div class="nav-header">
           <h1 class="h1"><a class="navbar-brand logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></h1>
         </div>
  -->    <ul class="nav-menu">
-          <li class="nav-item"><a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></li>
+          <!--<li class="nav-item"><a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></li>-->
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=5">About</a></li>
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=12">People</a></li>
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=17">Research</a></li>
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Publications</a></li>
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>
+          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Prospective Students</a></li>
+          <!-- deleted on 8.30 -->
+          <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>-->
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=8">Contact Us</a></li>
         </ul>
       </div>
@@ -85,41 +98,7 @@ global $times_square_settings;
     }
   ?>
   <?php if(($times_square_settings['header-display'] == 'home-page' && is_front_page ()) || $times_square_settings['header-display'] == 'all-pages') { ?>
-  <?php if($times_square_settings['header'] == 'image') { ?>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?>" />
-        </div>
-  <?php } else if($times_square_settings['header'] == 'metaslider') { ?>
-    <?php echo do_shortcode("[metaslider id=".$times_square_settings['header-metaslider']."]"); ?>
-  <?php } else if($times_square_settings['header'] == 'wysiwyg') { ?>
-  <?php } else if($times_square_settings['header'] == 'video') { ?>
-    <div class="video carousel slide carousel slide">
-        <?php echo ent2ncr($times_square_settings['header-video']); ?>
-  </div>
-  <?php } else { ?>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/slider.jpg" alt="<?php bloginfo( 'name' ); ?> Slider">
-        </div>
-        <div class="item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/slider2.jpg" alt="<?php bloginfo( 'name' ); ?> Slider 2">
-        </div>
-        <div class="item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/slider3.jpg" alt="<?php bloginfo( 'name' ); ?> Slider 3">
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only"><?php echo __('Previous', 'times-square'); ?></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only"><?php echo __('Next', 'times-square'); ?></span></a>
-    </div><!-- /.carousel -->
-  <?php } ?>
+  
     <?php } ?>
   <?php
     if(isset($times_square_settings['menu-secondary-status'])) {
