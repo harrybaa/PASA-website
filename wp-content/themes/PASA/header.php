@@ -21,6 +21,8 @@ global $times_square_settings;
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/header.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/GalleryOverried.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/overrideStyle.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
@@ -63,6 +65,7 @@ global $times_square_settings;
       );
   ?>
     <div class="navbar<?php echo $navbar_class; ?>" role="navigation">
+
       <div class="container">
 <!--         <div class="nav-header">
           <h1 class="h1"><a class="navbar-brand logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></h1>
@@ -141,23 +144,7 @@ global $times_square_settings;
         'walker'            => new wp_bootstrap_navwalker())
       );
   ?>
-    <div class="navbar<?php echo $navbar_class; ?>" role="navigation">
-      <div class="container">
-            <div class="navbar-header">
-      <?php if($menu) { ?>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-secondary">
-                <span class="sr-only"><?php __('Toggle navigation', 'time_square'); ?></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            <?php } ?>
-            </div>
-            <?php
-        echo times_square_main_menu($menu, $name);
-        ?><!--/.nav-collapse -->
-      </div>
-    </div>
+
   <?php
     }
   ?>

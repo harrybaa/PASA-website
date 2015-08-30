@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,WAAW,CACV,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,KAAK,CACb,UAAU,CAAE,OAAO,CACnB,UAAU,CAAE,MAAM,CAClB,QAAQ,CAAE,MAAM,CAEf,yBAAM,CACL,MAAM,CAAE,SAAS",
+"sources": ["overrideStyle.scss"],
+"names": [],
+"file": "overrideStyle.css"
+}

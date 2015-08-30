@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,eAAe,CACd,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,KAAK,CACb,mBAAG,CACF,KAAK,CAAC,IAAI",
+"sources": ["GalleryOverried.scss"],
+"names": [],
+"file": "GalleryOverried.css"
+}
