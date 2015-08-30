@@ -8,6 +8,9 @@
 	<?php get_sidebar( 'footer' ); ?>
     <hr>
     <?php /* WARNING! PLEASE DO NOT REMOVE LOGO/LINK IF YOU STILL NEED TO REMOVE  THEN USE WP ADMIN > APPEARANCE > THEME SETTINGS > REMOVE CREDIS IF YOU DO, YOUR CUSOMIZATIONS WILL BE LOST IN NEXT THEME UPDATE */ ?>
+
+    </div><!-- /container -->
+
     <footer>
         <!-- logobanner -->
         <div class='logobanner'>
@@ -25,8 +28,8 @@
             
         </div>
     </footer>
+    
     <?php /* WARNING! PLEASE DO NOT REMOVE LOGO/LINK IF YOU STILL NEED TO REMOVE  THEN USE WP ADMIN > APPEARANCE > THEME SETTINGS > REMOVE CREDIS IF YOU DO, YOUR CUSOMIZATIONS WILL BE LOST IN NEXT THEME UPDATE */ ?>
-    </div><!-- /container -->
 	<?php wp_footer(); ?>
   </body>
 </html>

@@ -2,11 +2,24 @@
  * Overried Style
  * For PASA UCMerced
  */
+
+#container{
+	max-width: 970px;
+	min-height: 600px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+footer{
+	width: 100%;
+	background: #092F44;
+	color: #e2e2e2;
+}
+
 .logobanner{
 	display: block;
 	width: 100%;
 	height: 190px;
-	background: #092F44;
 	text-align: center;
 	overflow: hidden;
 	.l-b-a{
@@ -14,7 +27,4 @@
 			margin: 16px auto;
 		}
 	}
-}
-.container{
-	
 }

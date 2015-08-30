@@ -22,10 +22,10 @@ global $times_square_settings;
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/header.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/GalleryOverried.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/overrideStyle.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/overrideStyle.css">
   </head>
   <body <?php body_class(); ?>>
     <!-- top navbar -->
