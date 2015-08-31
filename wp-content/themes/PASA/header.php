@@ -82,13 +82,13 @@ global $times_square_settings;
           <h1 class="h1"><a class="navbar-brand logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></h1>
         </div>
  -->    <ul class="nav-menu">
+          <!-- deleted on 8.30 -->
           <!--<li class="nav-item"><a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></li>-->
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=5">About</a></li>
+          <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=5">About</a></li>-->
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=12">People</a></li>
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=17">Research</a></li>
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Publications</a></li>
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Prospective Students</a></li>
-          <!-- deleted on 8.30 -->
           <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>-->
           <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=8">Contact Us</a></li>
         </ul>
