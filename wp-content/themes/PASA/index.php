@@ -26,6 +26,7 @@ get_header();
 ?>
 
 <div class='index-main'>
+
 	<p class='slogon'>
 		Welcome to <br>
 		<span class='red'>P</span>arallel <br> 
@@ -33,15 +34,19 @@ get_header();
 		<span class='red'>S</span>ystem and <br>
 		<span class='red'>A</span>rchitecture lab!
 	</p>
-	<h1>NEWS</h1>
-	<ul class='i-m-news'>
-		<li>
-			Aug 12th, 2015. Beta version of group website.
-		</li>
-		<li>
-			Highly-motivated PhD/Master students are sought to start in Spring 16 /Fall 2016under Professor Dong Li in the areas of high performance computing, and parallel and distributed systems. Funding for students is expected to be in the form of research and/or teaching assistantships. 
-		</li>
-	</ul>
+
+	<div class='news-wrapper'>
+		
+		<h1>NEWS</h1>
+		<ul class='i-m-news'>
+			<li>
+				Aug 12th, 2015. Beta version of group website.
+			</li>
+			<li>
+				Highly-motivated PhD/Master students are sought to start in Spring 16 /Fall 2016under Professor Dong Li in the areas of high performance computing, and parallel and distributed systems. Funding for students is expected to be in the form of research and/or teaching assistantships. 
+			</li>
+		</ul>
+	</div>
 </div>
 
 <?php
