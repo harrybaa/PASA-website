@@ -54,16 +54,16 @@
 .nav-menu{
   width: 100%;
   height: 50px;
-  max-width: 960px;
+  max-width: 970px;
   margin: 0 auto 20px auto;
   padding: 0;
   overflow: hidden;
   list-style: none;
   background: #A29061;
-  box-shadow: 0 0 3px #585858;
+  box-shadow: 0 10px 20px #222;
   .nav-item{
     float: left;
-    width: 20%;
+    width: 12.5%;
     line-height: 50px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -73,14 +73,22 @@
     &:hover{
       background: #6D5B2A;
       color: #d3d3d3;
+      cursor: pointer;
     }
     a{
+      display: block;
+      width: 100%;
       color: #fff;
       font-size: 18px;
+      line-height: 50px;
       transition: color 0.5s;
       -webkit-transition: all 0.5s;
       &:hover{
       }
+    }
+    &.active{
+      background: #6D5B2A;
+      color: #d3d3d3;
     }
     /**logo**/
     /** deleted on 8.30 **/

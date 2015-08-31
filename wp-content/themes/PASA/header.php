@@ -20,8 +20,11 @@ global $times_square_settings;
   <?php } add_action( 'wp_head', 'theme_slug_render_title' ); } ?>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/header.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/GalleryOverried.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
@@ -85,14 +88,44 @@ global $times_square_settings;
           <!-- deleted on 8.30 -->
           <!--<li class="nav-item"><a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></li>-->
           <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=5">About</a></li>-->
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=12">People</a></li>
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=17">Research</a></li>
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Publications</a></li>
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Prospective Students</a></li>
+          <li class="nav-item active" data-pageid="0" ><a id=""href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
+          <li class="nav-item" data-pageid="171"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=171">News</a></li>
+          <li class="nav-item" data-pageid="174"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=174">Software</a></li>
+          <li class="nav-item" data-pageid="12"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=12">People</a></li>
+          <li class="nav-item" data-pageid="17"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=17">Research</a></li>
+          <li class="nav-item" data-pageid="15"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Publications</a></li>
+          <li class="nav-item" data-pageid="59"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=59">Students</a></li>
           <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>-->
-          <li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=8">Contact Us</a></li>
+          <li class="nav-item" data-pageid="8"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=8">Contact Us</a></li>
         </ul>
       </div>
+
+      <!-- menu controller -->
+      <script type="text/javascript">
+        $( document ).ready(function() {
+            var pid = $.urlParam('page_id');
+            var menu = $('.nav-menu').children();
+            console.log(menu);
+            $.each(menu, function(index, value){
+              console.log($(value).data('pageid'));
+              if($(value).data('pageid') == pid){
+                $(value).siblings().removeClass('active');
+                $(value).addClass('active');
+              }
+            });
+        });
+
+        $.urlParam = function(name){
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null){
+            return null;
+          }
+          else{
+            return results[1] || 0;
+          }
+        }
+      </script>
+
     </div>
   <?php
     }
