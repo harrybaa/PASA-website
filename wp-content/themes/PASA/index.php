@@ -35,6 +35,10 @@ get_header();
 		<span class='red'>A</span>lgorithm lab!
 	</p>
 
+	<div class='intro-wrapper'>
+		<h1>INTRODUCTION</h1>
+	</div>
+
 	<div class='news-wrapper'>
 		<h1>NEWS</h1>
 		<ul class='i-m-news'>

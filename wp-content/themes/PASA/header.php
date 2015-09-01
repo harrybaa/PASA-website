@@ -24,10 +24,9 @@ global $times_square_settings;
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/header.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/GalleryOverried.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic&subset=latin,greek' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Alegreya:400,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/overrideStyle.css">
   </head>
@@ -105,9 +104,7 @@ global $times_square_settings;
         $( document ).ready(function() {
             var pid = $.urlParam('page_id');
             var menu = $('.nav-menu').children();
-            console.log(menu);
             $.each(menu, function(index, value){
-              console.log($(value).data('pageid'));
               if($(value).data('pageid') == pid){
                 $(value).siblings().removeClass('active');
                 $(value).addClass('active');
