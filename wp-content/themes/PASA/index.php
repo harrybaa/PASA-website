@@ -27,6 +27,7 @@ get_header();
 
 <div class='index-main'>
 
+	<!-- Fist gallery and intro of the lab -->
 	<p class='slogon'>
 		<span>Welcome to</span> <br>
 		<span class='red'>P</span>arallel <br> 
@@ -35,10 +36,12 @@ get_header();
 		<span class='red'>A</span>lgorithm lab!
 	</p>
 
+	<!-- introduction of our lab -->
 	<div class='intro-wrapper'>
 		<h1>INTRODUCTION</h1>
 	</div>
 
+	<!-- list of the News -->
 	<div class='news-wrapper'>
 		<h1>NEWS</h1>
 		<ul class='i-m-news'>
@@ -54,6 +57,8 @@ get_header();
 		</ul>
 		
 	</div>
+
+	<!-- list of the Publication-->
 	<div class='news-wrapper'>
 		<h1>PUBLICATIONS</h1>
 		<ul class='i-m-news'>
