@@ -16,7 +16,7 @@ global $times_square_settings;
     <link rel="icon" href="<?php echo esc_url($times_square_settings['favicon']); ?>">
     <?php } ?>
   <?php if ( ! function_exists( '_wp_render_title_tag' ) ) { function theme_slug_render_title() { ?>
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title>PASA | Parallel Architecture, System, and Algorithm Lab</title>
   <?php } add_action( 'wp_head', 'theme_slug_render_title' ); } ?>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -93,7 +93,7 @@ global $times_square_settings;
           <li class="nav-item" data-pageid="12"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=12">People</a></li>
           <li class="nav-item" data-pageid="17"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=17">Research</a></li>
           <li class="nav-item" data-pageid="15"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Publications</a></li>
-          <li class="nav-item" data-pageid="59"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=59">Students</a></li>
+          <li class="nav-item" data-pageid="59"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=59">Prospective Students</a></li>
           <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>-->
           <li class="nav-item" data-pageid="8"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=8">Contact Us</a></li>
         </ul>

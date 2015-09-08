@@ -39,6 +39,7 @@ get_header();
 	<!-- introduction of our lab -->
 	<div class='intro-wrapper'>
 		<h1>INTRODUCTION</h1>
+		<p style="font-size:16px;"></p>
 	</div>
 
 	<!-- list of the News -->

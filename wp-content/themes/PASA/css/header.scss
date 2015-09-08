@@ -52,7 +52,7 @@
   }
 }
 .nav-menu{
-  width: 100%;
+  width: 970px;
   height: 50px;
   max-width: 970px;
   margin: 0 auto 20px auto;
@@ -63,7 +63,7 @@
   box-shadow: 0 10px 20px #222;
   .nav-item{
     float: left;
-    width: 12.5%;
+    padding: 0 16px 0 19px;
     line-height: 50px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
