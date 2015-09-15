@@ -32,48 +32,27 @@ get_header();
 		<span>Welcome to</span> <br>
 		<span class='red'>P</span>arallel <br> 
 		<span class='red'>A</span>rchitecture, <br>
-		<span class='red'>S</span>ystem and <br>
+		<span class='red'>S</span>ystem, and <br>
 		<span class='red'>A</span>lgorithm lab!
 	</p>
 
 	<!-- introduction of our lab -->
 	<div class='intro-wrapper'>
-		<h1>INTRODUCTION</h1>
-		<p style="font-size:16px;"></p>
+		<h3>INTRODUCTION</h3>
+		<p style="font-size:16px;"> The Parallel Architecture, System, and Algorithm (PASA) Lab in the Electrical 
+		Engineering and Computer Science Department 
+		at the University of California, Merced performs research in core technologies for large-scale parallel systems. 
+		The core theme of our research is to study how to enable scalable and efficient execution of enterprise and scientific applications on increasingly complex large-scale parallel systems. 
+		Our work creates innovation in runtime, architecture, performance modeling, and programming models;  
+		We also investigates the impact of novel architectures (e.g., non-volatile memory and accelerator with massive parallelism) on the designs of applications and runtime.
+		We investigate these technologies with the goal of improving the performance, energy efficiency, reliability, and productivity of large-scale parallel systems. 
+
+
+               See our Research and Publications pages for more information about this work. Also, for more information about the members of our group, see our People page.
+
+                </p>
 	</div>
 
-	<!-- list of the News -->
-	<div class='news-wrapper'>
-		<h1>NEWS</h1>
-		<ul class='i-m-news'>
-			<li>
-				Aug 12th, 2015. Beta version of group website.
-			</li>
-			<li>
-				Highly-motivated PhD/Master students are sought to start in Spring 16 /Fall 2016under Professor Dong Li in the areas of high performance computing, and parallel and distributed systems. Funding for students is expected to be in the form of research and/or teaching assistantships. 
-			</li>
-			<li class='list-more'>
-				<a href='#'>More..</p>
-			</li>
-		</ul>
-		
-	</div>
-
-	<!-- list of the Publication-->
-	<div class='news-wrapper'>
-		<h1>PUBLICATIONS</h1>
-		<ul class='i-m-news'>
-			<li>
-				Poremba, M., Mittal, S., Li, D., Vetter, J. S., & Xie, Y. (2015). DESTINY: A Tool for Modeling Emerging 3D NVM and eDRAM Caches. In IEEE Design Automation and Test in Europe Confernce and Exhibition (DATE).
-			</li>
-			<li>
-				Wu, B., Chen, G., Li, D., Shen, X., & Vetter, J. S. (2015). Enabling and Exploiting Flexible Task Assignment on GPU through SM-Centric Program Transformations. InInternational Conference on Supercomputing (ICS).			
-			</li>
-			<li class='list-more'>
-				<a href='#'>More..</p>
-			</li>
-		</ul>
-	</div>
 </div>
 
 <?php
