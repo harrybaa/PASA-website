@@ -15,9 +15,7 @@ global $times_square_settings;
     <?php if(isset($times_square_settings['favicon'])) { ?>
     <link rel="icon" href="<?php echo esc_url($times_square_settings['favicon']); ?>">
     <?php } ?>
-  <?php if ( ! function_exists( '_wp_render_title_tag' ) ) { function theme_slug_render_title() { ?>
     <title>PASA | Parallel Architecture, System, and Algorithm Lab</title>
-  <?php } add_action( 'wp_head', 'theme_slug_render_title' ); } ?>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
