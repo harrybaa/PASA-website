@@ -48,11 +48,10 @@ get_header();
 		We investigate these technologies with the goal of improving the performance, energy efficiency, reliability, and productivity of large-scale parallel systems. 
 
 
-               See our Research and Publications pages for more information about this work. Also, for more information about the members of our group, see our People page.
+        See our Research and Publications pages for more information about this work. Also, for more information about the members of our group, see our People page.
 
-                </p>
+        </p>
 	</div>
-s
 </div>
 
 <?php
