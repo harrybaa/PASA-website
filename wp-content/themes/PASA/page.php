@@ -30,9 +30,9 @@ Template Name: PASA defaul page
         <!-- right -->
         <div class="right-cont">
           <div class="r-c-news r-c-wrapper">
-            <div class="r-c-headwrap">Recent News</div>
+            <div class="r-c-headwrap"><a href="http://pasa.ucmerced.edu/?page_id=171">Recent News</a></div>
 
-            <div class='r-c-list'>
+            <div class='r-c-list news'>
             <?php
 
               query_posts('page_id=171');
@@ -44,18 +44,18 @@ Template Name: PASA defaul page
 
           </div>
           <div class="r-c-pablication r-c-wrapper">
-            <div class="r-c-headwrap">Recent Publications</div>
+            <div class="r-c-headwrap"><a href="http://pasa.ucmerced.edu/?page_id=15">Recent Publications</a></div>
 
-            <div class='r-c-list'>
+            <div class='r-c-list publication'>
             <?php
 
-              query_posts('page_id=171');
+              query_posts('page_id=15');
               while (have_posts()) : the_post();
                 the_content();
               endwhile;  
             ?>
             </div>
-            
+
           </div>
         </div>
         <!-- end of right -->

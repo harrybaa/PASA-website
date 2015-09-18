@@ -97,6 +97,13 @@ footer{
 	max-width: 940px;
 	font-size: 16px;
 	overflow: hidden;
+	.entry-content{
+		a{
+			color: #092F44;
+			text-decoration: underline;
+		}
+	}
+
 	.left-cont{
 		float: left;
 		padding: 10px 20px;
@@ -124,7 +131,7 @@ footer{
 			}
 			.r-c-list{
 				padding: 0;
-				max-height: 242px;
+				max-height: 494px;
 				list-style: none;
 				font-family: 'Roboto', sans-serif;
 				font-size: 14px;
@@ -137,8 +144,15 @@ footer{
 					margin: 0;
 				}
 			}
+			//to control the height of sidebar manully
+			.news{
+				max-height: 242px; 
+			}
+			.publication{
+				max-height: 384px;
+			}
 		}
-		.invisible{
+		.not-see{
 			display: none;
 		}
 	}
