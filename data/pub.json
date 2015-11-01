@@ -1,0 +1,24 @@
+{
+	"pub": [
+		{
+			"date": "2015",
+			"cont": "DESTINY: A Tool for Modeling Emerging 3D NVM and eDRAM Caches",
+			"publisher": "IEEE Design Automation and Test in Europe Confernce and Exhibition"
+		},
+		{
+			"date": "2015",
+			"cont": "Enabling and Exploiting Flexible Task Assignment on GPU through SM-Centric Program Transformations",
+			"publisher": "InInternational Conference on Supercomputing"
+		},
+		{
+			"date": "2015",
+			"cont": "Enabling Portable Optimizations of Data Placement on GPU",
+			"publisher": "The Heterogeneous Computing special issue of IEEE Micro"
+		},
+		{
+			"date": "2015",
+			"cont": "Fast Fault Injection and Sensitivity Analysis for Collective Communications",
+			"publisher": "IEEE Cluster"
+		}
+	]
+}

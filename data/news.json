@@ -1,0 +1,20 @@
+{
+	"news": [
+		{
+			"date": "9/14/2015",
+			"cont": "Two undergraduate students (Hanlin He and Zachary Canann) join PASA!"
+		},
+		{
+			"date": "9/1/2015",
+			"cont": "The PhD student, Yingchao Huang, is selected as a student volunteer for SC’15."
+		},
+		{
+			"date": "8/15/2015",
+			"cont": "2 PhD students (Yingchao Huang and Anzheng Guolu) and 3 Master students (Wei Liu, Hanbin Tao, and Himanshu Pillai) join PASA!"
+		},
+		{
+			"date": "7/25/2015",
+			"cont": "A paper, titled “Fast Fault Injection and Sensitivity Analysis for Collective Communications”, is accepted by Cluster’15."
+		}
+	]
+}

@@ -19,6 +19,7 @@ global $times_square_settings;
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://pasa.ucmerced.edu/bin/template.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/header.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/GalleryOverried.css">
