@@ -60,7 +60,7 @@ Template Name: PASA defaul page
 <script id="news_main" type="text/html">
   <ul>
     {{each list as value i}}
-      <li><b>{{value.date}}: </b>{{value.cont}}</li>
+      <li><b>[{{value.date}}] </b>{{value.cont}}</li>
     {{/each}}
   </ul>
 </script>
