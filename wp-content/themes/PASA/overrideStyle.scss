@@ -7,7 +7,6 @@
 body{
 	font-family: 'Oxygen', sans-serif;
 	line-height: 26px;
-	background: #f1f1f1;
 }
 .red{
 	color: red;
@@ -18,6 +17,13 @@ body{
 .left{
 	float: left;
 }
+.clearfix:after{
+	content: '.';
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: none;
+}
 
 
 /** --container for header menu-- **/
@@ -26,7 +32,7 @@ body{
 	max-width: 970px;
 	min-height: 600px;
 	margin: 0 auto;
-	background: #fff;
+	background: #f1f1f1;
 	box-shadow: 0 0 15px #464646;
 }
 
@@ -107,12 +113,15 @@ footer{
 
 	.left-cont{
 		float: left;
-		padding: 10px 80px 20px 50px;
-		width: 100%;
+		padding: 10px 20px;
+		width: 70%;
 		min-width: 400px;
+		background: #fff;
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		box-shadow: 0 0 3px #aaa;
 	}
 	.right-cont{
-		display: none; /* deleted in APR 2016 */
 		float: right;
 		padding: 10px;
 		width: 25%;
@@ -152,48 +161,71 @@ footer{
 	}
 }
 
-/** --style for page people-- **/
-.picture-wrapper{
-	position: relative;
-	margin: 10px auto 40px auto;
-	img{
-		width: 100%;
-	}
-	.annotation{
-		font-size: 14px;
-    	color: #989897;
-    	font-style: italic;
-	}
+/** --style for people template-- **/
+.person-frame{
+  display: block;
+  float: left;
+  width: 162px;
+  height: 260px;
+  margin: 10px 20px;
+  text-align: center;
+  .avater{
+    display: block;
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    border: 10px solid #fff;
+    box-shadow: 0 0 2px #3c3c3c;
+    border-radius: 2px;
+    text-align: center;
+    overflow: hidden;
+    img{
+    	width: 100%;
+    	height: 100%;
+    }
+  }
+  .usrname{
+  	font-size: 18px;
+  	font-weight: bold;
+  }
+  .title{
+  	font-size: 12px;
+  	font-weight: lighter;
+  }
+  .link{
+  	font-size: 12px;
+  	color: #5a5a5a;
+  	text-decoration: underline;
+  	&:hover{
+  		color: blue;
+  	}
+  }
+  &.bigger{
+  	width: 252px;
+  	height: 380px;
+  	.avater{
+  		width: 240px;
+  		height: 320px;
+      margin-bottom: 10px;
+  	}
+  	.usrname{
+  		font-size: 24px;
+  	}
+  	.title .link{
+  		font-size: 16px;
+  	}
+  }
 }
 
-.people-row{
-	display: block;
-	margin-bottom: 20px;
-	.wrap-header{
-		display: block;
-		position: relative;
-		padding: 0 18px;
-		width: 100%;
-		height: 48px;
-		margin: 10px auto 20px auto;
-		font-size: 24px;
-		line-height: 48px;
-		color: #fff;
-		background: #a29061; /* Old browsers */
-		background: -moz-linear-gradient(left, #a29061 0%, #a29061 58%, #ffffff 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(left, #a29061 0%,#a29061 58%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to right, #a29061 0%,#a29061 58%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	}
-	.wrap-content{
-		padding: 0 18px;
-	}
+.intro-frame{
+  display: block;
+  float: left;
+  width: 496px;
+  min-height: 200px;
+  font-size: 14px;
+  padding: 6px;
+  font-weight: lighter;
 }
-
-
-
-
-
-
 
 
 
