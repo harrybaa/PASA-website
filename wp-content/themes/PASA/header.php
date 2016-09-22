@@ -85,7 +85,7 @@ global $times_square_settings;
         <div class="right intro">
           <p>
             Parallel Architecture, System, and Algorithm lab<br>
-            University of Carlifornia, Merced
+            University of California, Merced
           </p>
         </div>
       </div>

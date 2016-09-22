@@ -45,7 +45,64 @@ get_header();
 			See our <a href="http://pasa.ucmerced.edu/?page_id=17">Research</a> and <a href="http://pasa.ucmerced.edu/?page_id=15">Publications</a> pages for more information about our work. For information about our group members, see our <a href="http://pasa.ucmerced.edu/?page_id=12">People</a> page. 
 		</p>
 	</div>
+
+	<div class='news-wrapper'>
+		<h3>RECENT NEWS</h3>
+		<ul id='news_list'></ul>
+	</div>
 </div>
+
+<script id="news_item" type="text/html">
+  <li><b>[{{date}}] </b>{{cont}}</li>
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    init();
+  });
+
+  function init(){
+    var url = {};
+    if(location.host == "pasa.ucmerced.edu"){
+      url.news = 'http://pasa.ucmerced.edu/data/news.json'
+      url.pub = 'http://pasa.ucmerced.edu/data/pub.json'
+    }else{
+      url.news = 'http://localhost:8888/pasa-website/data/news.json'
+      url.pub = 'http://localhost:8888/pasa-website/data/pub.json'
+    }
+    loadData(url);
+  }
+
+  function loadData(url){
+    if(url.news){
+      $.ajax({
+        url: url.news,
+        dataType: 'json',
+        success: function(res){
+          console.log('New Json data loaded.');
+          renderNewsData(res);
+        },
+        error: function(){
+          console.log('Faild to load the news data.');
+        }
+      });
+    }
+  }
+
+  function renderNewsData(res){
+    var fragmentSide = '',
+        fragmentMain = '',
+        data = res.news,
+        dataMain = {"list": data};
+        len = data.length;
+    if(len >8) len = 8;
+    for(var i = 0; i < len; i++){
+      fragmentSide += template("news_item", data[i]);
+    }
+    $("#news_list").html(fragmentSide);
+  }
+
+</script>
 
 <?php
 
