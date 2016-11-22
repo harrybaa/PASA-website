@@ -1,12 +1,32 @@
 {
 	"news": [
 		{
+			"date": "11/2016",
+			"cont": "Our poster is nominated as the best poster in SC’16."
+		},
+		{
+			"date": "11/2016",
+			"cont": "The PhD student, Hanlin He, won NSF NRT-IGE fellowship."
+		},
+		{
+			"date": "11/2016",
+			"cont": "The PASA lab went to SC’16. Four PhD students of the lab were selected as SC’16 student volunteers."
+		},
+		{
+			"date": "6/2016",
+			"cont": "We are selected as an NVIDIA Research Center with Dong as the lead PI."
+		},
+		{
 			"date": "5/2016",
 			"cont": "Undergraduate student, Hanlin He, won UC Merced Outstanding Student Award in the class of 2016. Congratulations, Hanlin!"
 		},
 		{
 			"date": "5/2016",
 			"cont": "Three students in PASA lab get internships during the summer! They are PhD student Luanzheng Guo (Lawrence Livermore National Lab), and undergraduate students Hanlin He and Kian Bradley (Lawrence Berkeley National Lab). Congratulations, students!"
+		},
+		{
+			"date": "3/2016",
+			"cont": "A paper (Algorithm-directed Data Placement in Explicitly Managed Non-Volatile Memory) is accepted by HPDC'16."
 		},
 		{
 			"date": "1/2016",

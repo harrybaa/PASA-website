@@ -99,13 +99,13 @@ global $times_square_settings;
           <!--<li class="nav-item"><a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">PASA</a></li>-->
           <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=5">About</a></li>-->
           <li class="nav-item active" data-pageid="0" ><a id=""href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-          <li class="nav-item" data-pageid="171"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=171">News</a></li>
-          <li class="nav-item" data-pageid="174"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=174">Software</a></li>
-          <li class="nav-item" data-pageid="12"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=12">People</a></li>
+          <li class="nav-item" data-pageid="10"><a id="" href="<?php echo esc_url( home_url( '/' ) );?>/?page_id=10">News</a></li>
+          <li class="nav-item" data-pageid="68"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=68">Software</a></li>
+          <li class="nav-item" data-pageid="41"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=41">People</a></li>
           <li class="nav-item" data-pageid="17"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=17">Research</a></li>
           <li class="nav-item" data-pageid="15"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=15">Publications</a></li>
-          <li class="nav-item" data-pageid="59"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=59">Prospective Students</a></li>
-          <!--<li class="nav-item"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>-->
+          <li class="nav-item" data-pageid="70"><a id="" href="<?php echo esc_url( home_url( '/' ) );?>/?page_id=70">Prospective Students</a></li>
+          <!--<li class="nav-item" data-pageid="59"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=20">Teaching</a></li>-->
           <li class="nav-item" data-pageid="8"><a id="" href="<?php echo esc_url( home_url( '/' ) ); ?>/?page_id=8">Contact Us</a></li>
         </ul>
       </div>

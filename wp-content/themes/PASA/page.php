@@ -66,7 +66,7 @@ Template Name: PASA defaul page
 </script>
 
 <script id="pub_item" type="text/html">
-  <p><b>"{{cont}}"</b> <i>--{{publisher}}</i></p>
+  <p>"{{cont}}" <i>{{publisher}}</i></p>
 </script>
 
 <script type="text/javascript">
